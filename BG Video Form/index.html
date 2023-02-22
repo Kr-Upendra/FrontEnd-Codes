@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Video Signup Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline>
+      <source src="./video.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <div class="formname">
+        <h3>Sign up form</h3>
+      </div>
+      <form class="form">
+        <input type="text" name="name" class="input" placeholder="Full Name" />
+        <input type="email" name="email" class="input" placeholder="Email" />
+        <input
+          type="password"
+          name="password"
+          class="input"
+          placeholder="Password"
+        />
+        <input
+          type="text"
+          name="confirmPassword"
+          placeholder="Confirm password"
+          class="input"
+        />
+        <button class="btn" type="submit">Sign up</button>
+      </form>
+      <div class="al-user">
+        <span>Already an user?<a href="/">Sign in</a></span>
+      </div>
+    </div>
+  </body>
+</html>
