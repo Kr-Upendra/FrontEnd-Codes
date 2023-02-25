@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-bottom: 1px solid $lightWhite;
+
+  &__logoarea {
+    margin-right: auto;
+
+    &--link {
+      &-img {
+        width: 50px;
+      }
+    }
+  }
+
+  &__navmenu {
+    &--links {
+      display: inline-block;
+      margin-right: 1rem;
+
+      & a {
+        font-size: 1.15rem;
+        font-weight: 400;
+        color: $linkColor;
+        letter-spacing: 0.05rem;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: $whiteColor;
+        }
+      }
+    }
+    &--links:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.hamburger {
+  cursor: pointer;
+  &__bar {
+    width: 22px;
+    height: 3px;
+    background-color: $whiteColor;
+    margin-bottom: 0.3rem;
+    border-radius: 0.2rem;
+    transition: 0.4s;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.toggle .hamburger__bar1 {
+}
